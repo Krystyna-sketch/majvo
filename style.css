@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    
+}
+ul{
+    margin: 0   ;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url('https://opencages.org/_nuxt/img/homepage.0151b74.jpg.webp');
+    padding: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.header::after{
+    content: "";
+    background: #0c3632;
+    position: absolute;
+    opacity: .85;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .25s ease;
+}
+.nav{
+    position: absolute;
+   width: calc(100vw - 40px);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+.logo-container{
+    line-height: 1.5;
+}
+.logo-link{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-img{
+    height: 40px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+   
+}
+.nav-list:last-of-type{
+    padding-right:  0; 
+}
+.nav-list li {
+ display: flex;
+ color: white;
+ font-weight: 600  ;
+ font-size: 14px;
+ padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+   
+}
+.nav-list-link{
+    position: relative;
+    transition: all .25s ease;
+}
+.nav-list-link::after {
+    content: "";
+    background: #17baaa;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);  
+    transition: all .25s ease;
+ }
+ .nav-list-link:hover{
+    color: #17baaa;
+ }
+.nav-list-link:hover::after{
+  transform: scaleX(1);
+    }
+
+.nav-list li:last-of-type a {
+background-color: #dd3d53;
+display: flex;
+border-radius: 3px;
+height: 30px;
+padding: 0 10px;
+transition: all .25s ease;
+font-weight: bold;
+align-items: center;
+font-size: 12px;
+}
+.nav-list li:last-of-type a:hover{
+    background-color: #c9233a;
+}
+.nav-list li:last-of-type a svg {
+    width: 1em;
+    
+    }
+    .heart{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .nav-toggle{
+        font-size: 2rem;
+        color: #fff;
+    }
+    .burger-icon{
+        display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+
+    }
+    
+.header-content{
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+ 
+}
+.header-content-title{
+    font-size: 56px;
+    color: white;
+    line-height: 84px;
+}
+.cl-primary{
+    color: #17baaa;
+}
+
+.btn-cta-dark{
+    
+    background-color: #17baaa;
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100%;
+    min-height: 40px;
+    transition: all .25s ease;
+
+}
+.btn-cta-dark:hover{
+    background-color: #129185;
+}
+@media screen and (max-width: 992px){
+  .nav-list{
+    display: none;
+  }
+}
+@media screen and (min-width: 992px){
+    .nav-toggle{
+        display: none;
+    }
+}

@@ -1,0 +1,120 @@
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+.logo{
+    width: 120px;
+    margin-left: 57px;
+    margin-top: 35px;
+}
+ul{
+    margin:0px;
+    list-style-type: none;
+    display: inline-flex;
+}
+li{
+    padding: 0px 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.button{
+    box-sizing: border-box;
+    height: 1rem;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown-menu::after{
+    display: flex;
+    transform: scale(1);
+}
+.dropdown-menu::before{
+    display: contents;
+}
+
+.greeting{
+    width: max-content;
+    height: 70px;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+.intro{
+    width: max-content;
+    font-size: large;
+    margin-left: 12%;
+}
+.articles-parent{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+    margin:0 12%
+}
+.articles-quick-access{
+    width: 240px;
+    height: 150px;
+    display: inline-block;
+    margin: 0px 25px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgb(190, 205, 200);
+    margin-top: 2rem;
+    
+}
+.articles-quick-access:hover{
+    transform: translateY(-3px);
+    transition: all .5s ease;
+}
+.articles-quick-access::after{
+    transform: scale(1.1);
+}
+.articles-quick-access-content{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+span img  {
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+@media screen and (max-width: 992px){
+    ul{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 992px){
+    span img{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 576px ){
+    .articles-parent{
+        display: grid;
+        grid-column: auto;
+    }
+    
+}
+@media screen and(max-width: 768px) {
+    .articles-parent{
+       display: flex;
+    }
+    
+}
