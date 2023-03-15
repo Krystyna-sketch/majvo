@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 120px;
+    margin-left: 57px;
+    margin-top: 35px;
+}
+ul{
+    margin: 0   ;
+    list-style-type: none;
+    display: inline-flex;
+}
+li{
+    padding: 0px 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+article{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 25%;
+}
+.photo-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.photo-content{
+    width: 60%;
+    height: auto;
+   
+}
+@media screen and (max-width: 992px){
+    ul{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 992px){
+    span img{
+        display: none;
+    }
+    
+}
